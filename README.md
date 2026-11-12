@@ -3,3 +3,6 @@ Vi ska arbeta med gruppprojekt där vi ska göra 3 olika spel. Den "lättaste" �
 
   
   log1 (2026-11-11): vi gjorde en reposatory i github som alla fick tillgång till. Sedan så programeradfe vi har programerat spelet sten sax påse och vi har börjat med ord gissnings spelt. Vi ska fortsätta med ord gissnings spelet nästa lektion och kanske förbättre sten sax påse programmet lite för det är bara rader av if och elif statements.
+
+
+log2 (2026-11-12): Vi har fortsatt på sten sax påse spelet. Vi har snyggat till det med lite formatering och optimesering av kod så att det inte är en miljard if statements. Vi har lagt till ett score system med mera. Vi har också fortsatt med ordgissnings spelet så vi har kommit långt fram med det. 
