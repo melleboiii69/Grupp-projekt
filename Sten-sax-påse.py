@@ -6,9 +6,7 @@ wincon={
     "sax":"påse",
     "påse":"sten"}
 
-score=[]
-
-omgångar=(input("hur många omgångar vill du sköra.\n"))
+score=0
 
 
 datorns_gissning=random.choice(gissning)
@@ -22,7 +20,7 @@ omgångar = int(omgångar)
 player_name=input(f"så vad heter du low key type shit\n")
 
 for i in range(omgångar):
-    player_gissning=input(f"hej {player_name} förbered dig själv på att förlora. \n välj sten sax eller påse: ")
+    player_gissning=input(f"hej {player_name} daks för runda förbered dig själv på att förlora. \n välj sten sax eller påse: ")
     while player_gissning not in gissning:
        player_gissning=input("skriv faktiskt sten sax eller påse\n")
 
@@ -32,13 +30,13 @@ for i in range(omgångar):
         print("du och datorn valde samma sak")
 
     elif wincon[player_gissning]>datorns_gissning:
-        score.append(1)
+        score+=1
         score=[sum(score)]
         print("du vann")
         print(score)
 
     else:
-        score.append(-1)
+        score-=1
         score=[sum(score)]
         print("du förlora")
         print(score)
