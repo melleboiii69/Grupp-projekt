@@ -20,7 +20,7 @@ omgångar = int(omgångar)
 player_name=input(f"så vad heter du low key type shit\n")
 
 for i in range(omgångar):
-    player_gissning=input(f"hej {player_name} daks för runda förbered dig själv på att förlora. \n välj sten sax eller påse: ")
+    player_gissning=input(f"hej {player_name} daks för runda förbered dig själv på att förlora. \n  spel omgång 1 \n------------------------ \n välj sten sax eller påse: ")
     while player_gissning not in gissning:
        player_gissning=input("skriv faktiskt sten sax eller påse\n")
 
@@ -31,13 +31,11 @@ for i in range(omgångar):
 
     elif wincon[player_gissning]>datorns_gissning:
         score+=1
-        score=[sum(score)]
         print("du vann")
         print(score)
 
     else:
         score-=1
-        score=[sum(score)]
         print("du förlora")
         print(score)
     print(f"så här mycket poäng har du {score}")
