@@ -5,7 +5,7 @@ wincon={
     "sten":"sax",
     "sax":"påse",
     "påse":"sten"}
-score=[0]
+score=[]
 datorns_gissning=random.choice(gissning)
 omgångar=(input("hur många omgångar vill du sköra.\n"))
 while not omgångar.isdigit():
@@ -15,16 +15,22 @@ omgångar = int(omgångar)
 player_name=input(f"så vad heter du low key type shit\n")
 for i in range(omgångar):
     player_gissning=input(f"hej {player_name} bered dig skjälv på att förlora. välj sten sax eller påse ")
-    if player_gissning not in gissning:
+    while player_gissning not in gissning:
        player_gissning=input("skriv faktiskt sten sax eller påse\n")
+    
     if wincon [player_gissning]==datorns_gissning:
         print("lika")
     elif wincon[player_gissning]>datorns_gissning:
         score.append(1)
+        score=[sum(score)]
         print("spelaren vann")
+        print(score)
     else:
         score.append(-1)
+        score=[sum(score)]
         print("du torska")
+        print(score)
+    print(f"så här mycket poäng fick du {score}")
         
 
 
