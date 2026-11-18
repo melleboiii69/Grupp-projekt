@@ -15,7 +15,7 @@ datorns_namn=("Python311")
 datorns_gissning=random.choice(gissning)
 
 
-while not omgångar.isdigit():
+while not omgångar.isdigit():#denna loop ser till att man skriver omgångar i siffror. Det ser också till att programmet inte förstörs när man skriver fel.
     print("Fel! Du får bara skriva i siffror")
     omgångar = input("Försök igen: ")
 
@@ -27,19 +27,19 @@ for i in range(omgångar):#här är en for loop där längden bestämms av hur m
 
     player_gissning = input(f"\nHej {player_name}, dags för en ny runda. Förbered dig själv på att förlora. \n\nSpelomgång {loopcount} \n------------------------ \nVälj 'Sten', 'Sax' eller 'Påse': ")
 
-    while player_gissning not in gissning:
+    while player_gissning not in gissning: #en while loop som ser till att du måste skriva rätt. det ser också till att programmet inte förstörs om man skriver fel
         print("Fel! Du kan bara skriva 'Sten', 'Sax' eller 'Påse'")
         player_gissning = input("Prova igen --> ")
 
     datorns_gissning = random.choice(gissning)
     
-    if wincon [player_gissning] == datorns_gissning:
+    if player_gissning == datorns_gissning:
         print("Du och datorn valde samma sak")
         print(f"{player_name} spelar: {player_gissning}\nDatorn spelar: {datorns_gissning}")
         print(f"Vinnare av spelomgång {loopcount} är oavgjort")
         loopcount = loopcount+1
 
-    elif wincon[player_gissning] > datorns_gissning:
+    elif wincon[player_gissning] == datorns_gissning:
         player_score += 1
         print(f"{player_name} spelar: {player_gissning}\n{datorns_namn} spelar: {datorns_gissning}")
         print(f"Vinnare i spel omgång {loopcount}: är {player_name}")
