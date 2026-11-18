@@ -3,10 +3,10 @@
 ordlista = ["äpple", "banan", "citron", "druva", "jordgubbe", "kiwi", "melon", "päron", "vindruva", "dator", "sigma", "sexigamän", "gabrielibikini", "vattenflaska", "rafaelmedgstring", "alexmedöl", "katt", "hund", "fisk", "fågel", "orm", "sköldpadda", "kanin", "hamster", "marsvin", "råtta", "mus", "sork", "ekorre", "rådjur", "älg", "hjort", "ren", "varg", "björn", "lodjur"]
 import random
 
-antal_gissningar = 9
+antal_felgissningar = 9
 
-if antal_gissningar > 0:
-    print("Du har " + str(antal_gissningar) + " gissningar kvar.")  
+if antal_felgissningar > 0:
+    print("Du har " + str(antal_felgissningar) + " gissningar kvar.")  
     
 ord = random.choice(ordlista)
 mängden_bokstäver = len(ord)
