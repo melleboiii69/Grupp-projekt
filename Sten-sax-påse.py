@@ -4,7 +4,7 @@ gissning = ["sten", "sax", "påse"]
 wincon={
     "sten":"sax",
     "sax":"påse",
-    "påse":"sten"}
+    "påse":"sten"} #detta är ett lexikon av gissningars matchupps. så om man väljer t.e.x sten så checkar programmet om datorn valde sax. Om deatorn gjorde det så printas det ut att spelaren vann. 
 
 player_name = input(f"Vad heter du? -> ")
 omgångar = (input("Hur många omgångar vill du köra -> "))
