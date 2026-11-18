@@ -6,3 +6,5 @@ Vi ska arbeta med gruppprojekt där vi ska göra 3 olika spel. Den "lättaste" �
 
 
 log2 (2026-11-12): Vi har fortsatt på sten sax påse spelet. Vi har snyggat till det med lite formatering och optimesering av kod så att det inte är en miljard if statements. Vi har lagt till ett score system med mera. Vi har också fortsatt med ordgissnings spelet så vi har kommit långt fram med det. 
+
+log3 (2026-11-18): Vi är klara med sten, sax, påse spelet förutom de få kommentarer som vi har kvar att göra. Vi har också precis börjat med att "göra om" våran ordgissnings kod som inte funkade. Så vi tänkte att en fräsh start behövdes. 
