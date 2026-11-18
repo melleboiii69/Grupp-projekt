@@ -20,7 +20,7 @@ player_name = input(f"Vad heter du? --> ")
 loopcount=1
 for i in range(omgångar):
 
-    player_gissning=input(f"Hej {player_name}, dags för en ny runda. Förbered dig själv på att förlora. \n  Spelomgång {loopcount} \n------------------------ \n Välj 'Sten', 'Sax' eller 'Påse': ")
+    player_gissning=" ".join.input(f"Hej {player_name}, dags för en ny runda. Förbered dig själv på att förlora. \n  Spelomgång {loopcount} \n------------------------ \n Välj 'Sten', 'Sax' eller 'Påse': ").lower().split()
 
     while player_gissning not in gissning:
         print("Fel! Du kan bara skriva 'Sten', 'Sax' eller 'Påse'")
