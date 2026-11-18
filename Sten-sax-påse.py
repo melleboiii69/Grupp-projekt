@@ -7,7 +7,7 @@ wincon={
     "påse":"sten"}
 
 score=0
-
+datorns_namn=("big daddy computer")
 datorns_gissning=random.choice(gissning)
 omgångar = (input("Hur många omgångar vill du köra? "))
 
@@ -34,19 +34,19 @@ for i in range(omgångar):
         print("Du och datorn valde samma sak")
         print(f"{player_name} spelar: {player_gissning}\nDatorn spelar: {datorns_gissning}\n")
         print(f"Vinnare av spelomgång {loopcount} är oavgjort")
-        loopcount += loopcount
+        loopcount = loopcount+1
 
     elif wincon[player_gissning] > datorns_gissning:
         score += 1
         print(f"{player_name} spelar: {player_gissning}\nDatorn spelar: {datorns_gissning}\n")
-        print(f"Vinnare i spel omgång {loopcount}: ")
-        loopcount += loopcount
+        print(f"Vinnare i spel omgång {loopcount}: är {player_name}")
+        loopcount = loopcount+1
 
     else:
         score -= 1
-        print("Du förlorade!")
-    print(f"Dina poäng {score}")
-    loopcount += loopcount
+        print(f"Du förlorade\n Spel omgång {loopcount}. {datorns_namn} vann!")
+        print(f"Dina poäng {score}")
+        loopcount = loopcount+1
         
 print(score)
     
