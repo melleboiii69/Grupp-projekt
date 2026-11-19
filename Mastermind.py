@@ -41,7 +41,7 @@ if niva == "1" or  niva == "lätt":
         player_gissning = input("Gissa koden: ")  
         if player_gissning[0] == random_kod_lätt[0] and player_gissning[1] == random_kod_lätt[1] and player_gissning[2] == random_kod_lätt[2] and player_gissning[3] == random_kod_lätt[3] and player_gissning[4] == random_kod_lätt[4] and player_gissning[5] == random_kod_lätt[5] and player_gissning[6] == random_kod_lätt[6] and player_gissning[7] == random_kod_lätt[7] and player_gissning[8] == random_kod_lätt[8] :
             print("✔")
-        elif player_gissning[0] != random_kod_lätt[0]:
+        elif player_gissning[0] != random_kod_lätt[0] and player_gissning[1] != random_kod_lätt[1] and player_gissning[2] != random_kod_lätt[2] and player_gissning[3] != random_kod_lätt[3] and player_gissning[4] != random_kod_lätt[4] and player_gissning[5] != random_kod_lätt[5] and player_gissning[6] != random_kod_lätt[6] and player_gissning[7] != random_kod_lätt[7] and player_gissning[8] != random_kod_lätt[8]:
             print("□")
     if player_gissning == random_kod_lätt:
         print("Grattis du gissade rätt på en siffra!")
@@ -50,9 +50,9 @@ else:
     for i in range (attempts_svår):
         print("Du har " + str(attempts_svår - i) + " försök kvar.")
         player_gissning = input("Gissa koden: ")
-        if player_gissning[0] == random_kod_svår[0]:
+        if player_gissning[0] == random_kod_svår[0] and player_gissning[1] == random_kod_svår[1] and player_gissning[2] == random_kod_svår[2] and player_gissning[3] == random_kod_svår[3] and player_gissning[4] == random_kod_svår[4] and player_gissning[5] == random_kod_svår[5] and player_gissning[6] == random_kod_svår[6] and player_gissning[7] == random_kod_svår[7] and player_gissning[8] == random_kod_svår[8] and player_gissning[9] == random_kod_svår[9] and player_gissning[10] == random_kod_svår[10] and player_gissning[11] == random_kod_svår[11] and player_gissning[12] == random_kod_svår[12]:
             print("✔")
-        elif player_gissning[0] != random_kod_svår[0]:
+        elif player_gissning[0] != random_kod_svår[0] and player_gissning[1] != random_kod_svår[1] and player_gissning[2] != random_kod_svår[2] and player_gissning[3] != random_kod_svår[3] and player_gissning[4] != random_kod_svår[4] and player_gissning[5] != random_kod_svår[5] and player_gissning[6] != random_kod_svår[6] and player_gissning[7] != random_kod_svår[7] and player_gissning[8] != random_kod_svår[8] and player_gissning[9] != random_kod_svår[9] and player_gissning[10] != random_kod_svår[10] and player_gissning[11] != random_kod_svår[11] and player_gissning[12] != random_kod_svår[12]:
             print("□")
     if player_gissning == random_kod_svår:
         print("Grattis du gissade rätt på en siffra!")
