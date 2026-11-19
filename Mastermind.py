@@ -20,7 +20,7 @@ print()
 attempts_svår=8
 attempts_lätt=12
 
-siffer_lista= ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+siffer_lista= ["1", "2", "3", "4", "5", "6"]
 
 random_kod_lätt=random.sample(siffer_lista, k=4) 
 
