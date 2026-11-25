@@ -33,7 +33,7 @@ for i in range(omgångar):
     
  # Fortsätter fråga tills spelaren skriver rätt
     while player_gissning not in gissning: 
-        print("Fel! Du kan bara skriva 'Sten', 'Sax' eller 'Påse'")
+        print("Fel! Du kan bara skriva 'Sten', 'Sax' eller 'Påse'\n")
         player_gissning = input("Prova igen --> ")
 # Datorn väljer slumpmässigt varje runda
     datorns_gissning = random.choice(gissning)
