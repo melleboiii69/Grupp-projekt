@@ -12,3 +12,5 @@ log3 (2026-11-18): Vi är klara med sten, sax, påse spelet förutom de få komm
 log4 (2026-11-19): vi blev helt klara med sten sax påse spelet och vi fortsätter med ordgissnings spelet och vi har börjat med mastermind. Dock våran mastermind koden är rent bajs och massa spaggheti. 
 
 log5 (2026-11-25): vi fixade till mastermind lite men den är inte bra. tydligen kan mna inte vinna och koden är typ en 3/10...
+
+log6 (2026-11-26): Vi har i princip börjat om på mastermind spelet genom att skapa funktioner för att förbättra koden från en massa ifsattser. 
